@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:29 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 17:48:27 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 18:09:09 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& src)
 /*				PUBLIC FUNCTIONS					  						  */
 /******************************************************************************/
 
+/* Attacker will attack target */
 void	ScavTrap::attack(const std::string& target)
 {
 	if (this->_hitPoints < 1)
@@ -91,4 +92,10 @@ void	ScavTrap::attack(const std::string& target)
 	std::cout << this->_name << "'s energy points= " << this->_energyPoints << std::endl;
 	std::cout << this->_name << "'s attack damage= " << this->_attackDamage 
 			<< RESET << std::endl << std::endl;
+}
+
+/* Just printing message informing that ScavTrap is now in gate keeper mode */
+void	ScavTrap::guardGate(void)
+{
+	std::cout << this->_name << " is now in gate keeper mode." << std::endl; 
 }

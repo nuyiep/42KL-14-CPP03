@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:38 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 17:39:12 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 18:00:13 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class ScavTrap : public ClapTrap
 		ScavTrap(std::string name);
 
 		void	attack(const std::string& target);
+		void	guardGate(void);
 	private:
 	
 };
