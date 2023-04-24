@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:29 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 17:04:39 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 17:48:27 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,32 @@ ScavTrap::ScavTrap(void)
 {
 	std::cout << "[ScavTrap] Default Constructor" << std::endl;
 	this->_name = "default constructor";
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
+}
+
+/* Constructor for name */
+ScavTrap::ScavTrap(std::string name)
+{
+	std::cout << "[ScavTrap] Constructor for " << CYAN << name << RESET << std::endl;
+	this->_name = name;
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 }
 
 /* 2. Copy constructor */
 ScavTrap::ScavTrap(const ScavTrap &src)
 {
-	std::cout << MAGENTA << "[ScavTrap] Copy Constructor called " RESET << '\n';
+	std::cout << MAGENTA << "[ScavTrap] Copy Constructor for " << CYAN << &src << RESET << '\n';
 	(*this) = src;
 }
 
 /* 3. Destructor */
 ScavTrap::~ScavTrap(void)
 {
-	std::cout << "[ScavTrap] Destructor" << std::endl;
+	std::cout << "[ScavTrap] Destructor for " << CYAN << this->_name << RESET << std::endl;
 }
 
 /******************************************************************************/
@@ -73,7 +86,7 @@ void	ScavTrap::attack(const std::string& target)
 	}
 	this->_energyPoints--;
 	std::cout << YELLOW << "ScavTrap " << this->_name << " attacks " << CYAN << target 
-			<< RESET << ", causing " << this->_attackDamage << " points of damage" << '\n'; 
+			<< YELLOW << ", causing " << this->_attackDamage << " points of damage" << '\n'; 
 	std::cout << this->_name << "'s hit points= " << this->_hitPoints << std::endl;
 	std::cout << this->_name << "'s energy points= " << this->_energyPoints << std::endl;
 	std::cout << this->_name << "'s attack damage= " << this->_attackDamage 

@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:38 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 17:01:38 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 17:39:12 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class ScavTrap : public ClapTrap
 		ScavTrap& operator=(const ScavTrap& src);
 		// 4. Destructor
 		~ScavTrap(void);
+		// Constructor for name
+		ScavTrap(std::string name);
 
 		void	attack(const std::string& target);
 	private:
