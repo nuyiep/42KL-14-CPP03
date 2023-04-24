@@ -1,0 +1,22 @@
+
+Inheritance
+
+Private
+- only accessible from an instance of a class only
+Protected
+- only accessible from an instance of a class 
+  or an instance of a child class
+Public 
+- accessible from anywhere
+
+To inherit, we have to write public. 
+1. Can also write protected and private- encaptulation level of inheritance
+2. Multiple inheritance- Diamond heritage
+
+__________________________________________________________________________________
+
+Adhoc Polymorphism 多态性/ function overloading 
+- function has the same name but different parameters 
+
+
+
