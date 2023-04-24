@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:19 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 20:55:58 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 21:18:44 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,11 @@
 
 int main(void)
 {
-	FragTrap a;
+	FragTrap a("Eren");
 	FragTrap b(a);
+	FragTrap c("titan");
+	a.attack("titan");
+	c.takeDamage(20);
+	a.highFivesGuys();
 	return (0);
 }

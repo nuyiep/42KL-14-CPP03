@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:34:57 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 21:01:52 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 21:15:01 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ class	FragTrap : public ClapTrap
 {
 	public:
 		/* Orthodox canonical form */
-		// 1. default constructor
 		FragTrap(void); 
-		// 2. destructor
 		~FragTrap(void);
-		// 3. assignment operator overloading function
 		FragTrap& operator=(const FragTrap& src);
-		// 4. copy constructor
 		FragTrap(const FragTrap &src);
+		
+		FragTrap(std::string name);
+		void	highFivesGuys(void);
 		
 	private:	
 };
