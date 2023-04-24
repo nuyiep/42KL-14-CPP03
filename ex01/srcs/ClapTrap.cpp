@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:14 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 16:51:25 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/24 18:24:11 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,12 +104,12 @@ void	ClapTrap::takeDamage(unsigned int amount)
 {
 	if (this->_hitPoints < 1)
 	{
-		std::cout << "[ClapTrap] [Can't take damage] No hit points left" << '\n';
+		std::cout << RED << "[ClapTrap] [Can't take damage] No hit points left" << RESET << '\n';
 		return ;
 	}
 	if (this->_energyPoints < 1)
 	{
-		std::cout << "[ClapTrap] [Can't take damage] No energy points left" << '\n';
+		std::cout << RED << "[ClapTrap] [Can't take damage] No energy points left" << RESET << '\n';
 		return ;
 	}
 	this->_hitPoints = this->_hitPoints - amount;
@@ -124,12 +124,12 @@ void	ClapTrap::beRepaired(unsigned int amount)
 {
 	if (this->_hitPoints < 1)
 	{
-		std::cout << "[ClapTrap] [Can't repair] No hit points left" << '\n';
+		std::cout << RED << "[ClapTrap] [Can't repair] No hit points left" << RESET << '\n';
 		return ;
 	}
 	if (this->_energyPoints < 1)
 	{
-		std::cout << "[ClapTrap] [Can't repair] No energy points left" << '\n';
+		std::cout << RED << "[ClapTrap] [Can't repair] No energy points left" << RESET << '\n';
 		return ;
 	}
 	this->_hitPoints = this->_hitPoints + amount;
