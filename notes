@@ -12,11 +12,20 @@ Public
 To inherit, we have to write public. 
 1. Can also write protected and private- encaptulation level of inheritance
 2. Multiple inheritance- Diamond heritage
+	- virtual- inherit from one base class
+		instead of 2 
 
+using
+- using directive: bring all namespace members into current scope
+- using declaration: bring a member from base class to current class's scope 
 __________________________________________________________________________________
 
 Adhoc Polymorphism 多态性/ function overloading 
 - function has the same name but different parameters 
 
+___________________________________________________________________________________
 
-
+-wshadow 
+-Wno-shadow 
+	- used to control the warnings related to variable shadowing
+	- occurs when a variable declared within a block has the same name 

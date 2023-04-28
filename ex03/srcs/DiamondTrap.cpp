@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:24:53 by plau              #+#    #+#             */
-/*   Updated: 2023/04/28 15:24:41 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/28 18:52:40 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 DiamondTrap::DiamondTrap(void)
 {
 	std::cout << YELLOW << "[Diamond Trap] Default Constructor" << RESET << std::endl;
+	
 }
 
 /* Destructor */
@@ -51,4 +52,12 @@ void	DiamondTrap::whoAmI(void)
 {
 	std::cout << "Name is = " << DiamondTrap::_name << "- ClapTrap::name is = " 
 			<< ClapTrap::_name << std::endl;	
+}
+
+void DiamondTrap::print()
+{
+	std::cout << "name: " <<  _name << std::endl;
+	std::cout << "hp: " << _hitPoints << std::endl;
+	std::cout << "ep: " << _energyPoints << std::endl;
+	std::cout << "atk: " << _attackDamage << std::endl;
 }

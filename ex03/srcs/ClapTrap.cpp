@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:14 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 21:00:26 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/28 21:09:13 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ClapTrap::ClapTrap(void) :_hitPoints(10), _energyPoints(10), _attackDamage(0) 
 {
 	std::cout << GREEN << "[ClapTrap] Default Constructor called" << RESET << '\n';
-	this->_name = "default constructor";
+	this->_name = "[ClapTrap] default constructor";
 }
 
 /* Copy Constructor*/
