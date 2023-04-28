@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:24:53 by plau              #+#    #+#             */
-/*   Updated: 2023/04/27 20:07:46 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/28 15:24:41 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,20 @@ DiamondTrap::DiamondTrap(const DiamondTrap &src)
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap &src)
 {
 	if (this != &src)
-	{
 		this->_name = src._name;
-		// this->_hitPoints = src._hitPoints;
-		
-	}
 	return (*this);
+}
+
+/* Name constructor */
+DiamondTrap::DiamondTrap(std::string name)
+{
+	this->_name = name;
+	ClapTrap::_name = std::string(DiamondTrap::_name).append("_clap_name");
+	std::cout << "[DiamondTrap]" << DiamondTrap::_name << " has been created" << std::endl;
+}
+
+void	DiamondTrap::whoAmI(void)
+{
+	std::cout << "Name is = " << DiamondTrap::_name << "- ClapTrap::name is = " 
+			<< ClapTrap::_name << std::endl;	
 }

@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:38 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 18:00:13 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/28 14:48:53 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "ClapTrap.hpp"
 
 /* Class ScavTrap inherit ClapTrap publicly */
-class ScavTrap : public ClapTrap
+class ScavTrap : public virtual ClapTrap
 {
 	public:
 	/* Orthodox canonical form */

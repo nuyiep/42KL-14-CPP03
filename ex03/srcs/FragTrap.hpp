@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 18:34:57 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 21:15:01 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/28 14:48:36 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
 
-class	FragTrap : public ClapTrap
+class	FragTrap : public virtual ClapTrap
 {
 	public:
 		/* Orthodox canonical form */
