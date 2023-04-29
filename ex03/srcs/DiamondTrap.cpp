@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:24:53 by plau              #+#    #+#             */
-/*   Updated: 2023/04/28 18:52:40 by plau             ###   ########.fr       */
+/*   Updated: 2023/04/29 14:28:58 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ DiamondTrap::DiamondTrap(std::string name)
 {
 	this->_name = name;
 	ClapTrap::_name = std::string(DiamondTrap::_name).append("_clap_name");
+	ScavTrap::_name = std::string(DiamondTrap::_name);
+	FragTrap::_name = std::string(DiamondTrap::_name);
 	std::cout << "[DiamondTrap]" << DiamondTrap::_name << " has been created" << std::endl;
 }
 
