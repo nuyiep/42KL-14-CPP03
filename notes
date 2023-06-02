@@ -29,3 +29,11 @@ ________________________________________________________________________________
 -Wno-shadow 
 	- used to control the warnings related to variable shadowing
 	- occurs when a variable declared within a block has the same name 
+
+
+can do
+ex01- add virtual when there is inheritance- virtual destructor, virtual attack function
+add wshadow in makefile
+ex03- add virtual to attack function for ClapTrap-
+	-otherwise it will shadow the attack function
+	- use static class variable to the default value

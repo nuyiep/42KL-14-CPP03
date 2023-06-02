@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:17 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 16:47:34 by plau             ###   ########.fr       */
+/*   Updated: 2023/06/02 14:39:49 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,13 @@ class ClapTrap
 		ClapTrap(const ClapTrap &src); //copy constructor
 		ClapTrap(std::string name);
 		ClapTrap& operator=(const ClapTrap& src); //assignment operator
-		~ClapTrap(void); //destructor
+		virtual	~ClapTrap(void); //destructor
 		
 		/* Getter function */
 		std::string	getName(void) const;
 		
 		/* Public function */
-		void	attack(const std::string& target);
+		virtual	void	attack(const std::string& target);
 		void	takeDamage(unsigned int amount);
 		void	beRepaired(unsigned int amount);
 	
