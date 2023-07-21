@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:17 by plau              #+#    #+#             */
-/*   Updated: 2023/04/24 16:47:34 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:04:01 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class ClapTrap
 		void	beRepaired(unsigned int amount);
 	
 	// changed to protected to that derived class can access it
+	void print();
 	protected:
 		std::string _name;
 		int			_hitPoints;

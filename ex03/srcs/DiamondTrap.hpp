@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:24:46 by plau              #+#    #+#             */
-/*   Updated: 2023/04/28 21:05:32 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:04:17 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		DiamondTrap(std::string name);//name constructor		
 		using ScavTrap::attack;
 		void	whoAmI();
-		void	print();
+		// void	print();
 		
 	private:
 		std::string _name;

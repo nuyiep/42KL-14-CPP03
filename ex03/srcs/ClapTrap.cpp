@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:14 by plau              #+#    #+#             */
-/*   Updated: 2023/04/28 21:09:13 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:03:41 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,3 +145,11 @@ void	ClapTrap::beRepaired(unsigned int amount)
 /*								OVERLOAD FUNCTIONS							  */
 /******************************************************************************/
 
+
+void ClapTrap::print()
+{
+	std::cout << "name: " <<  _name << std::endl;
+	std::cout << "hp: " << _hitPoints << std::endl;
+	std::cout << "ep: " << _energyPoints << std::endl;
+	std::cout << "atk: " << _attackDamage << std::endl;
+}

@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:34:19 by plau              #+#    #+#             */
-/*   Updated: 2023/04/29 14:26:37 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:01:09 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int main(void)
 	// a.attack("Titan");
 	// a.guardGate();
 	c.highFivesGuys();
-	// a.beRepaired(10);
-	// a.takeDamage(89);
+	c.beRepaired(10);
+	c.takeDamage(89);
 	c.whoAmI();
 
 	return (0);

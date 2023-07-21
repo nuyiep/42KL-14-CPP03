@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:44:38 by plau              #+#    #+#             */
-/*   Updated: 2023/04/28 21:09:52 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:14:10 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,11 @@ class ScavTrap : public virtual ClapTrap
 		void	guardGate(void);
 	
 	protected:
-		std::string	_name;
-		int			_hitPoints;
-		int			_energyPoints;
-		int			_attackDamage;
+		static const int	maxEP = 50;
+		// std::string	_name;
+		// int			_hitPoints;
+		// int			_energyPoints;
+		// int			_attackDamage;
 };
 
 #endif

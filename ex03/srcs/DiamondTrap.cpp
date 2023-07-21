@@ -6,7 +6,7 @@
 /*   By: plau <plau@student.42.kl>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:24:53 by plau              #+#    #+#             */
-/*   Updated: 2023/04/29 14:28:58 by plau             ###   ########.fr       */
+/*   Updated: 2023/07/21 18:17:19 by plau             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 /* Default constructor */
 DiamondTrap::DiamondTrap(void)
 {
+	this->_hitPoints = DiamondTrap::maxHP;
+	this->_energyPoints = FragTrap::maxEP;
 	std::cout << YELLOW << "[Diamond Trap] Default Constructor" << RESET << std::endl;
 	
 }
@@ -44,6 +46,8 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap &src)
 DiamondTrap::DiamondTrap(std::string name)
 {
 	this->_name = name;
+	this->_hitPoints = FragTrap::maxHP;
+	this->_energyPoints = ScavTrap::maxEP;
 	ClapTrap::_name = std::string(DiamondTrap::_name).append("_clap_name");
 	ScavTrap::_name = std::string(DiamondTrap::_name);
 	FragTrap::_name = std::string(DiamondTrap::_name);
@@ -56,10 +60,10 @@ void	DiamondTrap::whoAmI(void)
 			<< ClapTrap::_name << std::endl;	
 }
 
-void DiamondTrap::print()
-{
-	std::cout << "name: " <<  _name << std::endl;
-	std::cout << "hp: " << _hitPoints << std::endl;
-	std::cout << "ep: " << _energyPoints << std::endl;
-	std::cout << "atk: " << _attackDamage << std::endl;
-}
+// void DiamondTrap::print()
+// {
+// 	std::cout << "name: " <<  _name << std::endl;
+// 	std::cout << "hp: " << _hitPoints << std::endl;
+// 	std::cout << "ep: " << _energyPoints << std::endl;
+// 	std::cout << "atk: " << _attackDamage << std::endl;
+// }
